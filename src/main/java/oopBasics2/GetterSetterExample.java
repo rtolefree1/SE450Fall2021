@@ -11,19 +11,19 @@ package oopBasics2;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter @Setter
+//@Getter @Setter
 public class GetterSetterExample {
     // Private field
     private int privateInt;
-    private String name;
+    private String privateString;
 
-//    //Getter
-//    public int getPrivateInt() {
-//        return privateInt; }
-//    //Setter
-//    public void setPrivateInt(int privateInt) {
-//        this.privateInt = privateInt;
-//    }
+    //Getter
+    public int getPrivateInt() {
+        return privateInt; }
+    //Setter
+    public void setPrivateInt(int privateInt) {
+        this.privateInt = privateInt;
+    }
 }
 
 class DemoGetterSetter {
@@ -33,7 +33,6 @@ class DemoGetterSetter {
 //      Setting the value for the private field
         sampleOb.setPrivateInt(2);
 //      Getting the value from the private field.
-
         System.out.println("The priInt="+ sampleOb.getPrivateInt());
     }
 }

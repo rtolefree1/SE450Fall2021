@@ -10,10 +10,10 @@ package oopBasics1;
 class ClassEx1 {
     // Field initialization is optional.
     // Here myInt is initialized with the value 25.
-    public int myInt = 25;
+//    public int myInt = 25;
 
     // In the following case, it will be initialized with default value 0.
-    // public int myInt;
+     public int myInt;
 
     public static void main(String[] args) {
         System.out.println("***Demonstration-1. A class demo with 2 objects ***");

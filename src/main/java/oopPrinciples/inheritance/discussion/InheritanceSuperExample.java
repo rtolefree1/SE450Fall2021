@@ -13,6 +13,7 @@ public class InheritanceSuperExample {}
 class ParentCls {
     private int a;
     private int b;
+
     ParentCls(int a, int b) {
         System.out.println("I am in parent constructor.");
         System.out.println("Before setting,a="+ this.a);
@@ -33,7 +34,7 @@ class ChildCls extends ParentCls {
     ChildCls(int a, int b, int c) {
 //        System.out.println("Before setting,c="+ this.c);
 //      Error:Constructor call must be the first statement in a constructor
-        super(a, b);
+        super(a,b);
         System.out.println("I am in child constructor.");
         System.out.println("Before setting,c="+ this.c);
         this.c = c;

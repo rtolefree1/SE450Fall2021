@@ -8,7 +8,6 @@
 package DesignPatterns.Adapter.TextFormatter;
 
 import org.testng.annotations.Test;
-import static org.junit.Assert.*;
 
 public class FormatterDriver {
     @Test

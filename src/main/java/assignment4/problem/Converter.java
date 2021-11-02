@@ -7,14 +7,8 @@
 
 package assignment4.problem;
 
-import assignment4.solution.CoR.MileHandler;
-import assignment4.solution.CoRDecorator.AddUnitDecorator;
-import assignment4.solution.CoRDecorator.ExpDecorator;
-import assignment4.solution.CoRDecorator.RoundDecorator;
-
 public class Converter {
-  
-	
+
 	public static void main(String[] args) {
     	ConverterGUI ui = new ConverterGUI();
     	

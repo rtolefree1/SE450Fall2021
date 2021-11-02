@@ -11,6 +11,9 @@ public abstract class MainEmailHandler implements UniversityEmailHandler {
 
     private UniversityEmailHandler theNextHandlerInTheChain;
 
+    protected abstract String[] keyWords();
+    protected abstract void processEmailFinal(String emailText);
+
     public void setNextEmailHandler(UniversityEmailHandler emailHandler) {
         theNextHandlerInTheChain = emailHandler;
     }
@@ -35,34 +38,11 @@ public abstract class MainEmailHandler implements UniversityEmailHandler {
         // check to see if email can be processed by the current
         // email handler based on keyword match
         if (keyWordFound) {
-            processEmailHandler(emailText);
+            processEmailFinal(emailText);
         } else {
             // pass along the chain if the email is not processed
             // by the current email handler
             theNextHandlerInTheChain.processEmailHandler(emailText);
         }
     }
-
-    public static void handleEmail(String emailText) {
-        UniversityEmailHandler academic = new AcademicEmailHandler();
-        UniversityEmailHandler alumni = new AlumniEmailHandler();
-        UniversityEmailHandler advising = new AdvisingEmailHandler();
-        UniversityEmailHandler finance = new FinanceEmailHandler();
-        UniversityEmailHandler hr = new HREmailHandler();
-        UniversityEmailHandler admin = new AdminEmailHandler();
-
-        // setup chain direction
-        academic.setNextEmailHandler(alumni);
-        alumni.setNextEmailHandler(advising);
-        advising.setNextEmailHandler(finance);
-        finance.setNextEmailHandler(hr);
-        hr.setNextEmailHandler(admin);
-        // we do not need to set the next email handler after admin
-        // because it is the end of the chain of responsibility
-
-        // this line will start the chain
-        academic.processEmailHandler(emailText);
-    }
-    protected abstract String[] keyWords();
-    protected abstract void processEmailFinal(String emailText);
 }

@@ -18,8 +18,4 @@ public class FinanceEmailHandler extends MainEmailHandler {
         System.out.println("The Finance Team processed the email.");
     }
 
-    @Override
-    public void setNextEmailHandler(UniversityEmailHandler emailHandler) {
-
-    }
 }

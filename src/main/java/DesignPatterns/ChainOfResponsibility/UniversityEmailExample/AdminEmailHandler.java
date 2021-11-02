@@ -18,8 +18,4 @@ public class AdminEmailHandler extends MainEmailHandler {
         System.out.println("The Admin Team processed the email.");
     }
 
-    @Override
-    public void setNextEmailHandler(UniversityEmailHandler emailHandler) {
-
-    }
 }

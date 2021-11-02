@@ -18,8 +18,4 @@ public class AlumniEmailHandler extends MainEmailHandler {
         System.out.println("The Alumni Team processed the email.");
     }
 
-    @Override
-    public void setNextEmailHandler(UniversityEmailHandler emailHandler) {
-
-    }
 }

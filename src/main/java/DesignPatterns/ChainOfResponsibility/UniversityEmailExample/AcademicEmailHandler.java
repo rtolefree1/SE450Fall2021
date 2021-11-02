@@ -17,9 +17,4 @@ public class AcademicEmailHandler extends MainEmailHandler {
     protected void processEmailFinal(String emailText) {
         System.out.println("The Academic Team processed the email.");
     }
-
-    @Override
-    public void setNextEmailHandler(UniversityEmailHandler emailHandler) {
-
-    }
 }

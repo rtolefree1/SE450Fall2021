@@ -25,6 +25,7 @@ public class ATMDispenseClient {
     }
 
     public static void main(String[] args) {
+
         ATMDispenseClient atmDispenser = new ATMDispenseClient();
         while (true) {
             int amount = 0;

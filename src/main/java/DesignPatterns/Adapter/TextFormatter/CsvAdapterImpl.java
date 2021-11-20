@@ -9,6 +9,7 @@ package DesignPatterns.Adapter.TextFormatter;
 
 public class CsvAdapterImpl implements TextFormattable {
     CsvFormattable csvFormatter;
+
     public CsvAdapterImpl(CsvFormattable csvFormatter){
         this.csvFormatter=csvFormatter;
     }

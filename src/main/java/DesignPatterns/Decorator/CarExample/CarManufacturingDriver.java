@@ -14,7 +14,7 @@ public class CarManufacturingDriver {
         sportsCar.assemble();
         System.out.println("\n*****");
 
-        Car sportsLuxuryCar = new LuxuryCar(new SportsCar(new BasicCar()));
+        Car sportsLuxuryCar = new SportsCar(new LuxuryCar(new BasicCar()));
         sportsLuxuryCar.assemble();
     }
 

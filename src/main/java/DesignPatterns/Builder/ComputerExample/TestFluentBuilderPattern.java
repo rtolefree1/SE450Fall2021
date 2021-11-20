@@ -14,7 +14,8 @@ public class TestFluentBuilderPattern {
         //without any inconsistent state or arguments management issues
         Computer comp = new Computer.ComputerBuilder("1 TB", "32 GB")
                                     .setBluetoothEnabled(false)
-                                    .setGraphicsCardEnabled(true).build();
+                                    .setGraphicsCardEnabled(true)
+                                    .build();
 
         comp.displySpec();
     }

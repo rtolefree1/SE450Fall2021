@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         
-        String emailText = "transcript";
+        String emailText = "AKSUDGAKSHFJ;SAO";
 
         UniversityEmailHandler academic = new AcademicEmailHandler();
         UniversityEmailHandler alumni = new AlumniEmailHandler();
